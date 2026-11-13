@@ -1,0 +1,56 @@
+{
+  "name": "@joxos/dsh-kill-scope-guard",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness bundle that denies the first range Stop-Process in a shell tool call and reminds the agent to confirm the kill scope; literal-PID kills pass.",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "powershell",
+    "process",
+    "kill",
+    "guard"
+  ],
+  "license": "MIT",
+  "author": "Joxos <xujunhao61@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joxos/dsh-kill-scope-guard.git"
+  },
+  "homepage": "https://github.com/Joxos/dsh-kill-scope-guard#readme",
+  "bugs": {
+    "url": "https://github.com/Joxos/dsh-kill-scope-guard/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "parser.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "check": "node --check index.js && node --check parser.js",
+    "test": "node scripts/smoke.mjs",
+    "prepublishOnly": "npm run check"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

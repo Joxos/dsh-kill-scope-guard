@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Kill scope guard",
+    "description": "Parses shell commands with the PowerShell AST, blocks the first range Stop-Process (by name, pipeline, expression, or input object), and reminds the agent to confirm the kill scope; literal-PID kills pass."
+  }
+}

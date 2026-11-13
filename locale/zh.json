@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "进程清理范围守卫",
+    "description": "用 PowerShell AST 解析 shell 命令，拦截首次出现的范围型 Stop-Process（按名字、管道、表达式或对象），并提醒 agent 先确认 kill 范围；只带字面 PID 的写法直接放行。"
+  }
+}

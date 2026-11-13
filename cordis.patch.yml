@@ -1,0 +1,3 @@
+- insert:
+    - id: kill-scope-guard
+      name: '@joxos/dsh-kill-scope-guard'

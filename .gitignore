@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Build and test scratch space
+.tmp/
+coverage/
+*.log
+*.tgz
+
+# Local npm credentials/configuration
+.npmrc
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
